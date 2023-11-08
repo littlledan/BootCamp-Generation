@@ -6,6 +6,6 @@ public class Exercicio2 {
         float n3 = Float.parseFloat(JOptionPane.showInputDialog("Informe sua terceira nota: "));
         float n4 = Float.parseFloat(JOptionPane.showInputDialog("Informe sua quarta nota: "));
         float media = (n1 + n2 + n3 + n4) / 4;
-        JOptionPane.showMessageDialog(null, "Sua media final é: " + media );
+        JOptionPane.showMessageDialog(null, "Sua media final: " + media );
     }
 }
