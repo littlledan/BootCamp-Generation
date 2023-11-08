@@ -1,11 +1,18 @@
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 public class Exercicio2 {
     public static void main(String[]args){
-        float n1 = Float.parseFloat(JOptionPane.showInputDialog("Informe sua primeira nota: "));
-        float n2 = Float.parseFloat(JOptionPane.showInputDialog("Informe sua segunda nota: "));
-        float n3 = Float.parseFloat(JOptionPane.showInputDialog("Informe sua terceira nota: "));
-        float n4 = Float.parseFloat(JOptionPane.showInputDialog("Informe sua quarta nota: "));
-        float media = (n1 + n2 + n3 + n4) / 4;
-        JOptionPane.showMessageDialog(null, "Sua media final: " + media );
+        Scanner scanner = new Scanner(System.in);
+        float n1, n2, n3, n4, media; 
+        System.out.println("Digite a primeira nota: ");
+        n1 = scanner.nextFloat();
+        System.out.println("Digite a segunda nota: ");
+        n2 = scanner.nextFloat(); 
+        System.out.println("Digite a terceira nota: ");
+        n3 = scanner.nextFloat(); 
+        System.out.println("Digite a quarta nota: ");
+        n4 = scanner.nextFloat();
+        media = (n1 + n2 + n3 + n4) / 4;
+        System.out.printf("Sua media final é: %.1f %n ", media);
+        
     }
 }
